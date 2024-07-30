@@ -12,8 +12,8 @@ def CheckPassword(s,n):
         elif i.isupper():
             checker2 = 1
         elif i == ' ' or i == '/':
-            checker3 = 0
-    return checker1 and checker2 and checker3
+            return 0
+    return checker1 and checker2
 
 s=input()
 a=len(s)
